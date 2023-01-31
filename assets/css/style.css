@@ -1,0 +1,52 @@
+:root{
+    --red-border: #a92c24;
+    --gray-background: #aaaaaa;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+}
+
+h1 {
+    font-size: 2em;
+    border: 4px solid var(--red-border);
+}
+
+nav {
+    flex-direction: row;
+    align-items: flex-end;
+}
+nav ul li{
+    border-bottom: 4px solid var(--red-border);
+    margin: 10px;
+}
+
+aside {
+    font-size: 1.5em;
+    font-weight: bold;
+    border-right: 4px solid var(--red-border);
+    flex-basis: 50%;
+}
+
+.main-section {
+    border: 4px solid var(--red-border);
+    height: 300px;
+    background-image: url("assets/images/puppies.png");
+}
+
+.main-section:hover {
+    filter: brightness(75%);
+}
+
+.secondary-section {
+    border: 4px solid var(--red-border);
+    margin-top: 5px;
+    height: 100px;
+    background-color: var(--gray-background);
+}
+
+.secondary-section:hover {
+    filter: brightness(75%);
+}
