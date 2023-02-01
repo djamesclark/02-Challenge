@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>02-Challenge</title>
-  <link rel="stylesheet" href="assets/css/reset.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-Challenge</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
@@ -15,61 +15,114 @@
         <h1>
             Danny Clark
         </h1>
+        <img src="assets/images/Screenshot_20230201_104511.png"
+            alt="Picture of Danny Clark in front of wood background">
         <nav>
             <ul>
-              <li><a href="#about-me">About Me</a></li>
-              <li><a href="#work">Work</a></li>
-              <li><a href="#contact-me">Contact Me</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
             </ul>
-          </nav>
+        </nav>
     </header>
 
-    <article>
-        <aside id="about-me">
-            About Me:
-        </aside>
-        <p>
-            My name is Danny Clark. I'm a Marketing Solutions Specialist for a healthcare staffing firm. I am currently enrolled in this coding bootcamp to further my technological skills, and to learn more about coding. My goal is to apply this knowledge in my current career, and to be a web developer. 
-        </p>
-    </article>
-
     <main>
-        <aside id="work">
-            Work:
-        </aside>
-        <a href="https://djamesclark.github.io/01-22-mini-project/">
-             <button class="main-section">
-                <h3>Puppy Pals</h3>
-                <p>html</p>
-             </button>
-        </a>
+        <section class="hero">
+            <div>
+                <h2>Marketing Solutions Specialist</h2>
+            </div>
+        </section>
+        <article id="about-me" class="container">
+            <h2>
+                About Me:
+            </h2>
+            <div>
+                <p>
+                    My name is Danny Clark. I'm a Marketing Solutions Specialist for a healthcare staffing firm. I am
+                    currently enrolled in this coding bootcamp to further my technological skills, and to learn more
+                    about
+                    coding. My goal is to apply this knowledge in my current career, and to be a web developer.
+                </p>
+                <p>
+                    I live in Charleston, South Carolina with my wife, daughter, dog, and two cats. I'm originally from
+                    Utah. I love to play all kinds of games, spending time outdoors, and watching movies. My favorite
+                    games
+                    to play are from the developer FromSoftware.
+                </p>
+            </div>
+        </article>
 
-        <a href="https://djamesclark.github.io/01-Challenge/">
-            <button class="secondary-section">
-                <h3>Horiseon</h3>
-                <p>HTML/CSS</p>
-            </button>
-        </a>
+        <section id="work" class="container">
+            <h2>
+                Work:
+            </h2>
+            <div class="projects">
+                <a href="https://djamesclark.github.io/01-22-mini-project/" class="main-button project" target="_blank">
+                    <div >
+                        <h3>Puppy Pals</h3>
+                        <p>HTML</p>
+                    </div>
+                </a>
 
-        <button class="secondary-section">
-            <h3>Placeholder 2</h3>
-            <p>Code</p>
-        </button>
+                <a href="https://djamesclark.github.io/01-Challenge/" class="project">
+                    <div >
+                        <h3>Horiseon</h3>
+                        <p>HTML/CSS</p>
+                    </div>
+                </a>
 
-        <button class="secondary-section">
-            <h3>Placeholder 3</h3>
-            <p>Code</p>
-        </button>
+                <a href="https://djamesclark.github.io/01-Challenge/" class="project">
+                    <div >
+                        <h3>Horiseon</h3>
+                        <p>HTML/CSS</p>
+                    </div>
+                </a>
+
+                <a href="https://djamesclark.github.io/01-Challenge/" class="project">
+                    <div >
+                        <h3>Horiseon</h3>
+                        <p>HTML/CSS</p>
+                    </div>
+                </a>
+
+                <a href="https://djamesclark.github.io/01-Challenge/" class="project">
+                    <div >
+                        <h3>Horiseon</h3>
+                        <p>HTML/CSS</p>
+                    </div>
+                </a>
+
+                <a href="https://djamesclark.github.io/01-Challenge/" class="project">
+                    <div >
+                        <h3>Horiseon</h3>
+                        <p>HTML/CSS</p>
+                    </div>
+                </a>
+                <!-- <button class="project">
+                    <h3>Placeholder 2</h3>
+                    <p>Code</p>
+                </button>
+
+                <button class="project">
+                    <h3>Placeholder 3</h3>
+                    <p>Code</p>
+                </button> -->
+            </div>
+        </section>
 
     </main>
 
-    <footer>
-        <aside id="contact-me">
+    <footer id="contact-me" class="container">
+        <h2>
             Contact Me:
-        </aside>
-        <p>801-822-7868</p>
-        <p><a href="mailto:djamesclark@gmail.com">djamesclark@gmail.com</a></p>
-        <p><a href="https://github.com/djamesclark">Github</a></p>
+        </h2>
+        <div>
+            <nav>
+                <a>801-822-7868</a>
+                <a href="mailto:djamesclark@gmail.com">djamesclark@gmail.com</a>
+                <a href="https://github.com/djamesclark">Github</a>
+            </nav>            
+        </div>
     </footer>
 
 

@@ -1,51 +1,118 @@
-:root{
-    --red-border: #a92c24;
-    --gray-background: #aaaaaa;
-}
+ :root {
+     --red-border: #a92c24;
+     --gray-background: #aaaaaa;
+ }
 
-body {
+ body {
+
+     background-color: beige;
+     margin: 0;
+     padding: 0;
+ }
+
+ header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border: 4px solid var(--red-border);
+ }
+
+ header h1 {
+     font-size: 2em;
+ }
+
+ nav ul {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ nav ul li {
+
+     display: inline-flex;
+     margin: 10px;
+ }
+
+ header img {
+     height: 200px;
+ }
+ 
+ a{
+    text-decoration: none;
+ }
+
+ /*
+article{
     display: flex;
-    flex-direction: column;
-    background-color: beige;
-}
-
-h1 {
-    font-size: 2em;
-    border: 4px solid var(--red-border);
-}
-
-nav {
-    flex-direction: row;
-    align-items: flex-end;
-}
-nav ul li{
-    border-bottom: 4px solid var(--red-border);
-    margin: 10px;
 }
 
 aside {
     font-size: 1.5em;
     font-weight: bold;
     border-right: 4px solid var(--red-border);
+    margin-right: 30px;
+    padding-right: 50px;
+}*/
+
+main {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.main-section {
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container h2{
+    flex: 0 0 20%;
+    text-align: right;
+    padding: 10px;
+    border-right: 4px solid var(--red-border);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.container div {
+    flex: 0 0 80%;
+}
+
+.container div p {
+    padding: 15px;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
     border: 4px solid var(--red-border);
-    height: 300px;
-    background-image: url("assets/images/puppies.png");
+    margin: 15px;
+    min-height: 200px;
+    max-height: 200px;
+    flex-basis: calc(50% -20px);
+    display: flex;
 }
 
-.main-section:hover {
+.project:hover {
     filter: brightness(75%);
 }
 
-.secondary-section {
-    border: 4px solid var(--red-border);
-    margin-top: 5px;
-    height: 100px;
-    background-color: var(--gray-background);
+.main-button {
+    min-height: 300px;
+    background-image: url('../images/puppies.png');
+    flex-basis: 100%;
 }
 
-.secondary-section:hover {
-    filter: brightness(75%);
+.container div nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+/*
+@media screen (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+} */
