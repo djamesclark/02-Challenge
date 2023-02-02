@@ -11,3 +11,7 @@ No installation required, just click the LINK
 ## Usage
 
 The functionality of the website is pretty straightforward, you can click around the navigation bar and it will take you to the different sections of the site. Clicking on any of the different projects will take you to their respective website.
+
+![Alt text](assets/images/Screenshot%202023-02-02%20084300.png)
+
+https://djamesclark.github.io/02-Challenge/
